@@ -8,7 +8,7 @@
  * https://github.com/ariakit/ariakit/blob/da142672eddefa99365773ced72171facc06fdcb/packages/ariakit/src/collection/collection-item.ts
  */
 
-import { addItemToArray, type MaybeAccessor } from "@kobalte/utils";
+import { addItemToArray, type MaybeAccessor } from "@opencenter-cloud/kobalte-utils";
 import {
 	createComponent,
 	createEffect,

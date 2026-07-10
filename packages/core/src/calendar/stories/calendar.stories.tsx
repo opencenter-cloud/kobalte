@@ -32,7 +32,7 @@ import {
 } from "../index";
 import { Popover } from "../../popover";
 import type { DateValue } from "../types";
-import type { RangeValue } from "@kobalte/utils";
+import type { RangeValue } from "@opencenter-cloud/kobalte-utils";
 
 const meta = preview.meta({
 	title: "Components/Calendar",

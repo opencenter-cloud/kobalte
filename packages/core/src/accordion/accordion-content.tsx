@@ -6,7 +6,7 @@
  * https://github.com/adobe/react-spectrum/blob/c183944ce6a8ca1cf280a1c7b88d2ba393dd0252/packages/@react-aria/accordion/src/useAccordion.ts
  */
 
-import { mergeDefaultProps } from "@kobalte/utils";
+import { mergeDefaultProps } from "@opencenter-cloud/kobalte-utils";
 import { combineStyle } from "@solid-primitives/props";
 import type { ValidComponent } from "@solidjs/web";
 import { type Component, createEffect, omit } from "solid-js";

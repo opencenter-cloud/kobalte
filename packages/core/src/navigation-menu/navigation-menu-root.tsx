@@ -1,4 +1,4 @@
-import { callHandler, mergeDefaultProps, mergeRefs } from "@kobalte/utils";
+import { callHandler, mergeDefaultProps, mergeRefs } from "@opencenter-cloud/kobalte-utils";
 import { createControllableSignal } from "@solid-primitives/controlled-signal";
 import { createPresence } from "@solid-primitives/presence";
 import type { JSX, ValidComponent } from "@solidjs/web";

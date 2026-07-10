@@ -2,7 +2,7 @@ import {
 	isFunction,
 	mergeDefaultProps,
 	OverrideComponentProps,
-} from "@kobalte/utils";
+} from "@opencenter-cloud/kobalte-utils";
 import type { JSX, ValidComponent } from "@solidjs/web";
 import { type Accessor, children, createEffect, omit, Show } from "solid-js";
 

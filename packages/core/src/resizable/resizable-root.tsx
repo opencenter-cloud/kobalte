@@ -6,7 +6,7 @@
  * https://github.com/corvudev/corvu/tree/main/packages/resizable
  */
 
-import { mergeDefaultProps, mergeRefs } from "@kobalte/utils";
+import { mergeDefaultProps, mergeRefs } from "@opencenter-cloud/kobalte-utils";
 import { combineStyle } from "@solid-primitives/props";
 import type { JSX, ValidComponent } from "@solidjs/web";
 import {

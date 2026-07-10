@@ -1,4 +1,4 @@
-import { isFunction } from "@kobalte/utils";
+import { isFunction } from "@opencenter-cloud/kobalte-utils";
 
 import { toastStore } from "./toast-store";
 import type {

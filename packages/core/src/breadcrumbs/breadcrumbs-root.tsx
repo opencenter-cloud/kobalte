@@ -6,7 +6,7 @@
  * https://github.com/adobe/react-spectrum/blob/38a57d3360268fb0cb55c6b42b9a5f6f13bb57d6/packages/@react-aria/breadcrumbs/src/useBreadcrumbs.ts
  */
 
-import { mergeDefaultProps } from "@kobalte/utils";
+import { mergeDefaultProps } from "@opencenter-cloud/kobalte-utils";
 import type { JSX, ValidComponent } from "@solidjs/web";
 import { omit } from "solid-js";
 

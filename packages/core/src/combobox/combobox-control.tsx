@@ -1,4 +1,4 @@
-import { isFunction, mergeRefs, OverrideComponentProps } from "@kobalte/utils";
+import { isFunction, mergeRefs, OverrideComponentProps } from "@opencenter-cloud/kobalte-utils";
 import type { JSX, ValidComponent } from "@solidjs/web";
 import { type Accessor, children, omit } from "solid-js";
 

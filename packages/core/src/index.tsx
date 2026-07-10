@@ -51,5 +51,5 @@ export * as Tooltip from "./tooltip";
 
 // @ts-expect-error
 console["w" + "arn"](
-	`[kobalte]: Importing from "@kobalte/core" is deprecated, use specific imports instead. For more information checkout each component's page at https://kobalte.dev/.`,
+	`[kobalte]: Importing from "@opencenter-cloud/kobalte-core" barrel is deprecated, use specific imports instead. For more information checkout each component's page at https://kobalte.dev/.`,
 );

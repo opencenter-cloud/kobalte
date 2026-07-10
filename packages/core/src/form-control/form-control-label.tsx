@@ -1,4 +1,4 @@
-import { mergeDefaultProps, mergeRefs } from "@kobalte/utils";
+import { mergeDefaultProps, mergeRefs } from "@opencenter-cloud/kobalte-utils";
 import type { ValidComponent } from "@solidjs/web";
 import { createEffect, createSignal, omit, onCleanup } from "solid-js";
 

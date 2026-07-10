@@ -6,7 +6,7 @@
  * https://github.com/adobe/react-spectrum/blob/703ab7b4559ecd4fc611e7f2c0e758867990fe01/packages/@react-spectrum/tabs/test/Tabs.test.js
  */
 
-import { createPointerEvent } from "@kobalte/tests";
+import { createPointerEvent } from "@opencenter-cloud/kobalte-tests";
 import { fireEvent, render, within } from "@solidjs/testing-library";
 import userEvent from "@testing-library/user-event";
 import { vi } from "vitest";

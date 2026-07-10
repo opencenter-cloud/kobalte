@@ -1,4 +1,4 @@
-import { isNumber, isString } from "@kobalte/utils";
+import { isNumber, isString } from "@opencenter-cloud/kobalte-utils";
 
 import type { CollectionNode } from "./types";
 

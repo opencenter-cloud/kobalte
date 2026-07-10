@@ -1,4 +1,4 @@
-import { mergeDefaultProps } from "@kobalte/utils";
+import { mergeDefaultProps } from "@opencenter-cloud/kobalte-utils";
 import { createEffect, createSignal, createUniqueId, omit } from "solid-js";
 import type { MenubarMenuOptions, MenubarMenuProps } from "../menubar";
 import { useMenubarContext } from "../menubar/menubar-context";

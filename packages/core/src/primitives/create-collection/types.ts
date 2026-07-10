@@ -1,4 +1,4 @@
-import type { MaybeAccessor } from "@kobalte/utils";
+import type { MaybeAccessor } from "@opencenter-cloud/kobalte-utils";
 
 import type { DomCollectionItem } from "../create-dom-collection";
 

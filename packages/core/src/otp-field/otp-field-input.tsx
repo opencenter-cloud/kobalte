@@ -6,7 +6,7 @@
  * https://github.com/corvudev/corvu/blob/main/packages/otp-field/src/Input.tsx
  */
 
-import { callHandler, mergeDefaultProps, mergeRefs } from "@kobalte/utils";
+import { callHandler, mergeDefaultProps, mergeRefs } from "@opencenter-cloud/kobalte-utils";
 import { isServer, type JSX, type ValidComponent } from "@solidjs/web";
 import {
 	createMemo,

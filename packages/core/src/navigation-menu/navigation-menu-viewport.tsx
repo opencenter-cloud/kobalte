@@ -2,7 +2,7 @@ import {
 	composeEventHandlers,
 	mergeRefs,
 	type Orientation,
-} from "@kobalte/utils";
+} from "@opencenter-cloud/kobalte-utils";
 import type {
 	FocusOutsideEvent,
 	InteractOutsideEvent,

@@ -1,4 +1,4 @@
-import { access, type MaybeAccessor } from "@kobalte/utils";
+import { access, type MaybeAccessor } from "@opencenter-cloud/kobalte-utils";
 import { createControllableBooleanSignal } from "@solid-primitives/controlled-signal";
 import type { Accessor } from "solid-js";
 

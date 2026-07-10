@@ -10,7 +10,7 @@ import {
 	focusWithoutScrolling,
 	mergeDefaultProps,
 	removeItemFromArray,
-} from "@kobalte/utils";
+} from "@opencenter-cloud/kobalte-utils";
 import { createHideOutside } from "@solid-primitives/interaction";
 
 import { createPresence } from "@solid-primitives/presence";

@@ -6,7 +6,7 @@
  * https://github.com/adobe/react-spectrum/blob/0af91c08c745f4bb35b6ad4932ca17a0d85dd02c/packages/@react-aria/textfield/src/useTextField.ts
  */
 
-import { composeEventHandlers, mergeDefaultProps } from "@kobalte/utils";
+import { composeEventHandlers, mergeDefaultProps } from "@opencenter-cloud/kobalte-utils";
 import type { JSX, ValidComponent } from "@solidjs/web";
 import { omit } from "solid-js";
 

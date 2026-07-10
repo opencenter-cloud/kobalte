@@ -159,7 +159,7 @@ importers:
       '@internationalized/date':
         specifier: 3.12.2
         version: 3.12.2
-      '@kobalte/core':
+      '@opencenter-cloud/kobalte-core':
         specifier: workspace:*
         version: link:../../packages/core
       '@solidjs/meta':
@@ -190,15 +190,15 @@ importers:
         specifier: 0.5.11
         version: 0.5.11(@types/node@26.1.0)(db0@0.3.4)(ioredis@5.11.1)(jiti@2.7.0)(oxc-parser@0.127.0)(rolldown@1.1.4)(terser@5.48.0)
     devDependencies:
-      '@kobalte/tailwindcss':
-        specifier: 0.9.0
-        version: 0.9.0(tailwindcss@4.3.2)
       '@mdx-js/mdx':
         specifier: 3.1.1
         version: 3.1.1
       '@mdx-js/rollup':
         specifier: 3.1.1
         version: 3.1.1(rollup@4.62.2)
+      '@opencenter-cloud/kobalte-tailwindcss':
+        specifier: workspace:*
+        version: link:../../packages/tailwindcss
       '@tailwindcss/postcss':
         specifier: ^4.3.2
         version: 4.3.2
@@ -262,9 +262,9 @@ importers:
       '@internationalized/number':
         specifier: ^3.2.1
         version: 3.6.7
-      '@kobalte/utils':
-        specifier: ^0.9.2
-        version: 0.9.2(@solidjs/web@2.0.0-beta.15(solid-js@2.0.0-beta.15))(solid-js@2.0.0-beta.15)
+      '@opencenter-cloud/kobalte-utils':
+        specifier: workspace:*
+        version: link:../utils
       '@solid-primitives/a11y':
         specifier: next
         version: 1.0.0-next.0(@solidjs/web@2.0.0-beta.15(solid-js@2.0.0-beta.15))(solid-js@2.0.0-beta.15)
@@ -279,13 +279,13 @@ importers:
         version: 1.0.0-next.0(@solidjs/web@2.0.0-beta.15(solid-js@2.0.0-beta.15))(solid-js@2.0.0-beta.15)
       '@solid-primitives/i18n':
         specifier: next
-        version: 3.0.0-next.1(solid-js@2.0.0-beta.15)
+        version: 3.0.0-next.2(@solidjs/web@2.0.0-beta.15(solid-js@2.0.0-beta.15))(solid-js@2.0.0-beta.15)
       '@solid-primitives/interaction':
         specifier: next
         version: 1.0.0-next.0(@solidjs/web@2.0.0-beta.15(solid-js@2.0.0-beta.15))(solid-js@2.0.0-beta.15)
       '@solid-primitives/keyboard':
         specifier: next
-        version: 2.0.0-next.2(@solidjs/web@2.0.0-beta.15(solid-js@2.0.0-beta.15))(solid-js@2.0.0-beta.15)
+        version: 2.0.0-next.3(@solidjs/web@2.0.0-beta.15(solid-js@2.0.0-beta.15))(solid-js@2.0.0-beta.15)
       '@solid-primitives/presence':
         specifier: next
         version: 1.0.0-next.0(@solidjs/web@2.0.0-beta.15(solid-js@2.0.0-beta.15))(solid-js@2.0.0-beta.15)
@@ -311,7 +311,7 @@ importers:
         specifier: ^2.0.0-beta.14
         version: 2.0.0-beta.15
     devDependencies:
-      '@kobalte/tests':
+      '@opencenter-cloud/kobalte-tests':
         specifier: workspace:*
         version: link:../tests
       esbuild-plugin-solid:
@@ -1569,16 +1569,6 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@kobalte/tailwindcss@0.9.0':
-    resolution: {integrity: sha512-WbueJTVRiO4yrmfHIBwp07y3M5iibJ/gauEAQ7mOyg1tZulvpO7SM/UdgzX95a9a0KDt1mQFxwO7RmpOUXWOWA==}
-    peerDependencies:
-      tailwindcss: ^3.3.3
-
-  '@kobalte/utils@0.9.2':
-    resolution: {integrity: sha512-jRVXr+zsVHxzDXRoh+CDeXzvCsFJ6uiHhqqNQ26Cw9ZsZ3D6nqPUBt1gGVtj2ZPmRL3a9Uk1v8D1aJ8/I12Dow==}
-    peerDependencies:
-      solid-js: ^1.8.8
-
   '@manypkg/find-root@1.1.0':
     resolution: {integrity: sha512-mki5uBvhHzO8kYYix/WRy2WX8S3B5wdVSc9D6KcU5lQNglP2yt58/VfLuAK49glRXChosY8ap2oJ1qgma3GUVA==}
 
@@ -2408,9 +2398,10 @@ packages:
       '@solidjs/web': ^2.0.0-beta.15
       solid-js: ^2.0.0-beta.15
 
-  '@solid-primitives/i18n@3.0.0-next.1':
-    resolution: {integrity: sha512-BsFOeatrTpXEcZywIwfcrd4Lq3dCMQ57yWvxeCbgafNPInNOpFTGEBWICM7wka0+GPj0eblDMGyZ9QSpdNE2pQ==}
+  '@solid-primitives/i18n@3.0.0-next.2':
+    resolution: {integrity: sha512-8Ie5TP3lyzBMyUJk6tkQmix1vEAkloVtHv7IEFXawtUEy+SX35+RJvwNr+hscZre/QzRiEBssyn7VS9ZNnON8w==}
     peerDependencies:
+      '@solidjs/web': ^2.0.0-beta.15
       solid-js: ^2.0.0-beta.15
 
   '@solid-primitives/interaction@1.0.0-next.0':
@@ -2419,8 +2410,8 @@ packages:
       '@solidjs/web': ^2.0.0-beta.15
       solid-js: ^2.0.0-beta.15
 
-  '@solid-primitives/keyboard@2.0.0-next.2':
-    resolution: {integrity: sha512-xs8Z0+E0pCvwN2R8ELnVlJ2/Ug0IkeBPoen7E9f54f/nKdUoOuzWSzSNeCnE4lMSoMimAiL73kF2kumRaNrzpQ==}
+  '@solid-primitives/keyboard@2.0.0-next.3':
+    resolution: {integrity: sha512-AHa3ZufSQuYrCE35pYl7JhNmIZF/GbHsB1Jq50sD0EK+K6RefP5/g28QDmGzPR6AkWuGM0yvD7ekTO2GwXX8YA==}
     peerDependencies:
       '@solidjs/web': ^2.0.0-beta.15
       solid-js: ^2.0.0-beta.15
@@ -8107,23 +8098,6 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@kobalte/tailwindcss@0.9.0(tailwindcss@4.3.2)':
-    dependencies:
-      tailwindcss: 4.3.2
-
-  '@kobalte/utils@0.9.2(@solidjs/web@2.0.0-beta.15(solid-js@2.0.0-beta.15))(solid-js@2.0.0-beta.15)':
-    dependencies:
-      '@solid-primitives/event-listener': 3.0.0-next.1(@solidjs/web@2.0.0-beta.15(solid-js@2.0.0-beta.15))(solid-js@2.0.0-beta.15)
-      '@solid-primitives/keyed': 3.0.0-next.0(@solidjs/web@2.0.0-beta.15(solid-js@2.0.0-beta.15))(solid-js@2.0.0-beta.15)
-      '@solid-primitives/map': 1.0.0-next.0(@solidjs/web@2.0.0-beta.15(solid-js@2.0.0-beta.15))(solid-js@2.0.0-beta.15)
-      '@solid-primitives/media': 4.0.0-next.0(@solidjs/web@2.0.0-beta.15(solid-js@2.0.0-beta.15))(solid-js@2.0.0-beta.15)
-      '@solid-primitives/props': 4.0.0-next.1(@solidjs/web@2.0.0-beta.15(solid-js@2.0.0-beta.15))(solid-js@2.0.0-beta.15)
-      '@solid-primitives/refs': 3.0.0-next.0(@solidjs/web@2.0.0-beta.15(solid-js@2.0.0-beta.15))(solid-js@2.0.0-beta.15)
-      '@solid-primitives/utils': 7.0.0-next.1(@solidjs/web@2.0.0-beta.15(solid-js@2.0.0-beta.15))(solid-js@2.0.0-beta.15)
-      solid-js: 2.0.0-beta.15
-    transitivePeerDependencies:
-      - '@solidjs/web'
-
   '@manypkg/find-root@1.1.0':
     dependencies:
       '@babel/runtime': 7.29.7
@@ -8795,8 +8769,9 @@ snapshots:
       '@solidjs/web': 2.0.0-beta.15(solid-js@2.0.0-beta.15)
       solid-js: 2.0.0-beta.15
 
-  '@solid-primitives/i18n@3.0.0-next.1(solid-js@2.0.0-beta.15)':
+  '@solid-primitives/i18n@3.0.0-next.2(@solidjs/web@2.0.0-beta.15(solid-js@2.0.0-beta.15))(solid-js@2.0.0-beta.15)':
     dependencies:
+      '@solidjs/web': 2.0.0-beta.15(solid-js@2.0.0-beta.15)
       solid-js: 2.0.0-beta.15
 
   '@solid-primitives/interaction@1.0.0-next.0(@solidjs/web@2.0.0-beta.15(solid-js@2.0.0-beta.15))(solid-js@2.0.0-beta.15)':
@@ -8805,7 +8780,7 @@ snapshots:
       '@solidjs/web': 2.0.0-beta.15(solid-js@2.0.0-beta.15)
       solid-js: 2.0.0-beta.15
 
-  '@solid-primitives/keyboard@2.0.0-next.2(@solidjs/web@2.0.0-beta.15(solid-js@2.0.0-beta.15))(solid-js@2.0.0-beta.15)':
+  '@solid-primitives/keyboard@2.0.0-next.3(@solidjs/web@2.0.0-beta.15(solid-js@2.0.0-beta.15))(solid-js@2.0.0-beta.15)':
     dependencies:
       '@solid-primitives/event-listener': 3.0.0-next.1(@solidjs/web@2.0.0-beta.15(solid-js@2.0.0-beta.15))(solid-js@2.0.0-beta.15)
       '@solid-primitives/rootless': 2.0.0-next.0(@solidjs/web@2.0.0-beta.15(solid-js@2.0.0-beta.15))(solid-js@2.0.0-beta.15)

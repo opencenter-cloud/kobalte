@@ -1,4 +1,4 @@
-import { callHandler } from "@kobalte/utils";
+import { callHandler } from "@opencenter-cloud/kobalte-utils";
 import type { JSX, ValidComponent } from "@solidjs/web";
 import { type Component, omit } from "solid-js";
 

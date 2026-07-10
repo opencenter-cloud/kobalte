@@ -6,7 +6,7 @@
  * https://github.com/corvudev/corvu/tree/main/packages/drawer
  */
 
-import { mergeDefaultProps } from "@kobalte/utils";
+import { mergeDefaultProps } from "@opencenter-cloud/kobalte-utils";
 import {
 	createEffect,
 	createMemo,

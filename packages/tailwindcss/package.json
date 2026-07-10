@@ -1,23 +1,26 @@
 {
-	"name": "@kobalte/tailwindcss",
-	"version": "0.9.0",
+	"name": "@opencenter-cloud/kobalte-tailwindcss",
+	"version": "0.1.0",
 	"private": false,
-	"description": "A TailwindCSS plugin for styling Kobalte components with data-* attributes by using modifiers like ui-expanded:*",
+	"description": "TailwindCSS plugin for styling Kobalte components with data-* attributes (ui-expanded:*, etc.). Solid 2 bridge fork of @kobalte/tailwindcss, published by opencenter-cloud.",
 	"keywords": [
 		"solid",
 		"solidjs",
+		"solid-2",
 		"ui",
 		"library",
 		"design-system",
-		"components"
+		"components",
+		"tailwindcss",
+		"kobalte-fork"
 	],
-	"homepage": "https://github.com/kobaltedev/kobalte/tree/main/packages/tailwindcss#readme",
+	"homepage": "https://github.com/opencenter-cloud/kobalte/tree/feat/corvu-next-integration/packages/tailwindcss#readme",
 	"bugs": {
-		"url": "https://github.com/kobaltedev/kobalte/issues"
+		"url": "https://github.com/opencenter-cloud/kobalte/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/kobaltedev/kobalte.git"
+		"url": "git+https://github.com/opencenter-cloud/kobalte.git"
 	},
 	"license": "MIT",
 	"author": "Fabien Marie-Louise <fabienml.dev@gmail.com>",

@@ -6,7 +6,7 @@
  * https://github.com/adobe/react-spectrum/blob/5c1920e50d4b2b80c826ca91aff55c97350bf9f9/packages/@react-spectrum/picker/test/Picker.test.js
  */
 
-import { createPointerEvent, installPointerEvent } from "@kobalte/tests";
+import { createPointerEvent, installPointerEvent } from "@opencenter-cloud/kobalte-tests";
 import { fireEvent, render, within } from "@solidjs/testing-library";
 import { createSignal, Show } from "solid-js";
 import { vi } from "vitest";

@@ -1,4 +1,4 @@
-import { callHandler, mergeRefs } from "@kobalte/utils";
+import { callHandler, mergeRefs } from "@opencenter-cloud/kobalte-utils";
 import { combineStyle } from "@solid-primitives/props";
 import { COLOR_INTL_TRANSLATIONS } from "@solid-primitives/utils/colors";
 import type { JSX, ValidComponent } from "@solidjs/web";

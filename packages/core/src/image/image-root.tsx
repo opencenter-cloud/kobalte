@@ -6,7 +6,7 @@
  * https://github.com/radix-ui/primitives/blob/21a7c97dc8efa79fecca36428eec49f187294085/packages/react/avatar/src/Avatar.tsx
  */
 
-import { OverrideComponentProps } from "@kobalte/utils";
+import { OverrideComponentProps } from "@opencenter-cloud/kobalte-utils";
 import type { ValidComponent } from "@solidjs/web";
 import { createSignal, omit } from "solid-js";
 

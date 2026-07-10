@@ -13,7 +13,7 @@ import {
 	mergeRefs,
 	OverrideComponentProps,
 	visuallyHiddenStyles,
-} from "@kobalte/utils";
+} from "@opencenter-cloud/kobalte-utils";
 import { combineStyle } from "@solid-primitives/props";
 import type { ComponentProps, JSX, ValidComponent } from "@solidjs/web";
 import { omit } from "solid-js";

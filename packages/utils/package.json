@@ -1,26 +1,28 @@
 {
-	"name": "@kobalte/utils",
-	"version": "0.9.2",
+	"name": "@opencenter-cloud/kobalte-utils",
+	"version": "0.1.0",
 	"private": false,
-	"description": "Common utilities and types for Kobalte.",
+	"description": "Common utilities and types for Kobalte. Solid 2 bridge fork of @kobalte/utils, published by opencenter-cloud.",
 	"keywords": [
 		"solid",
 		"solidjs",
+		"solid-2",
 		"ui",
 		"library",
 		"design-system",
 		"components",
 		"headless",
 		"unstyled",
-		"aria"
+		"aria",
+		"kobalte-fork"
 	],
-	"homepage": "https://github.com/kobaltedev/kobalte/tree/main/packages/utils#readme",
+	"homepage": "https://github.com/opencenter-cloud/kobalte/tree/feat/corvu-next-integration/packages/utils#readme",
 	"bugs": {
-		"url": "https://github.com/kobaltedev/kobalte/issues"
+		"url": "https://github.com/opencenter-cloud/kobalte/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/kobaltedev/kobalte.git"
+		"url": "git+https://github.com/opencenter-cloud/kobalte.git"
 	},
 	"license": "MIT",
 	"author": "Fabien Marie-Louise <fabienml.dev@gmail.com>",

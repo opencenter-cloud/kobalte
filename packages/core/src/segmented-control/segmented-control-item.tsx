@@ -1,4 +1,4 @@
-import { mergeRefs } from "@kobalte/utils";
+import { mergeRefs } from "@opencenter-cloud/kobalte-utils";
 import type { ValidComponent } from "@solidjs/web";
 import { type Component, createEffect, createSignal, omit } from "solid-js";
 import type { ElementOf, PolymorphicProps } from "../polymorphic";

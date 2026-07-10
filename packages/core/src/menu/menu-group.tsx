@@ -6,7 +6,7 @@
  * https://github.com/adobe/react-spectrum/blob/e6808d1b5e80cef7af7e63974f658043593b2e1e/packages/@react-aria/menu/src/useMenuSection.ts
  */
 
-import { createGenerateId, mergeDefaultProps } from "@kobalte/utils";
+import { createGenerateId, mergeDefaultProps } from "@opencenter-cloud/kobalte-utils";
 import type { ValidComponent } from "@solidjs/web";
 import { createSignal, createUniqueId } from "solid-js";
 

@@ -15,7 +15,7 @@ import {
 	mergeRefs,
 	OverrideComponentProps,
 	type ValidationState,
-} from "@kobalte/utils";
+} from "@opencenter-cloud/kobalte-utils";
 import { createFormResetListener } from "@solid-primitives/form";
 import type { JSX, ValidComponent } from "@solidjs/web";
 import {

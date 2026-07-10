@@ -4,7 +4,7 @@ import {
 	mergeDefaultProps,
 	mergeRefs,
 	type ValidationState,
-} from "@kobalte/utils";
+} from "@opencenter-cloud/kobalte-utils";
 import { createFormResetListener } from "@solid-primitives/form";
 import { createElementSize } from "@solid-primitives/resize-observer";
 

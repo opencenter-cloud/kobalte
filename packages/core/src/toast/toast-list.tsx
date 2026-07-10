@@ -19,7 +19,7 @@ import {
 	getDocument,
 	getWindow,
 	mergeRefs,
-} from "@kobalte/utils";
+} from "@opencenter-cloud/kobalte-utils";
 import { isServer, type JSX, type ValidComponent } from "@solidjs/web";
 import { createEffect, For, omit, untrack } from "solid-js";
 import {

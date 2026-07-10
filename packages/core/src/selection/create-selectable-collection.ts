@@ -15,7 +15,7 @@ import {
 	type MaybeAccessor,
 	type Orientation,
 	scrollIntoView,
-} from "@kobalte/utils";
+} from "@opencenter-cloud/kobalte-utils";
 import type { JSX } from "@solidjs/web";
 import {
 	type Accessor,

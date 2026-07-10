@@ -1,4 +1,4 @@
-import type { OverrideProps } from "@kobalte/utils";
+import type { OverrideProps } from "@opencenter-cloud/kobalte-utils";
 import {
 	type ComponentProps,
 	Dynamic,
@@ -7,7 +7,7 @@ import {
 } from "@solidjs/web";
 import { omit, untrack } from "solid-js";
 
-export type { OverrideComponentProps, OverrideProps } from "@kobalte/utils";
+export type { OverrideComponentProps, OverrideProps } from "@opencenter-cloud/kobalte-utils";
 
 /* -------------------------------------------------------------------------------------------------
  * Polymorphic

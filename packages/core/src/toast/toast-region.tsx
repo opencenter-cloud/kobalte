@@ -16,7 +16,7 @@ import {
 	createGenerateId,
 	mergeDefaultProps,
 	OverrideComponentProps,
-} from "@kobalte/utils";
+} from "@opencenter-cloud/kobalte-utils";
 import { combineStyle } from "@solid-primitives/props";
 import type { JSX, ValidComponent } from "@solidjs/web";
 import { createMemo, createSignal, createUniqueId, omit } from "solid-js";

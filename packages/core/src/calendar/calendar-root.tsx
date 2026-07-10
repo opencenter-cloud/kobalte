@@ -29,7 +29,7 @@ import {
 	mergeRefs,
 	type RangeValue,
 	type ValidationState,
-} from "@kobalte/utils";
+} from "@opencenter-cloud/kobalte-utils";
 import type { ValidComponent } from "@solidjs/web";
 import { isServer } from "@solidjs/web";
 import {

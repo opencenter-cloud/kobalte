@@ -1,4 +1,4 @@
-import { focusWithoutScrolling, mergeRefs } from "@kobalte/utils";
+import { focusWithoutScrolling, mergeRefs } from "@opencenter-cloud/kobalte-utils";
 import { createFocusTrap } from "@solid-primitives/focus";
 import {
 	createHideOutside,

@@ -1,4 +1,4 @@
-import type { Orientation } from "@kobalte/utils";
+import type { Orientation } from "@opencenter-cloud/kobalte-utils";
 import {
 	MenuCheckboxItem as CheckboxItem,
 	MenuGroup as Group,

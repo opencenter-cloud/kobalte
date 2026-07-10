@@ -1,4 +1,4 @@
-import { mergeDefaultProps, type ValidationState } from "@kobalte/utils";
+import { mergeDefaultProps, type ValidationState } from "@opencenter-cloud/kobalte-utils";
 import { createControllableSignal } from "@solid-primitives/controlled-signal";
 import {
 	COLOR_INTL_TRANSLATIONS,

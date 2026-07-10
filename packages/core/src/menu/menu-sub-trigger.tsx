@@ -19,7 +19,7 @@ import {
 	mergeDefaultProps,
 	mergeRefs,
 	type Orientation,
-} from "@kobalte/utils";
+} from "@opencenter-cloud/kobalte-utils";
 import { isServer, type JSX, type ValidComponent } from "@solidjs/web";
 import { createEffect, createUniqueId, omit, onCleanup } from "solid-js";
 

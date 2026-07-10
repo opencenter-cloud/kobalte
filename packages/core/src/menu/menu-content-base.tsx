@@ -13,7 +13,7 @@ import {
 	mergeDefaultProps,
 	mergeRefs,
 	type Orientation,
-} from "@kobalte/utils";
+} from "@opencenter-cloud/kobalte-utils";
 import { createFocusTrap } from "@solid-primitives/focus";
 import type {
 	FocusOutsideEvent,

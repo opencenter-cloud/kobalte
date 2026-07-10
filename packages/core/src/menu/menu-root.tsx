@@ -2,7 +2,7 @@ import {
 	createGenerateId,
 	mergeDefaultProps,
 	type Orientation,
-} from "@kobalte/utils";
+} from "@opencenter-cloud/kobalte-utils";
 import { createUniqueId, omit, type ParentProps } from "solid-js";
 
 import { useOptionalMenubarContext } from "../menubar/menubar-context";

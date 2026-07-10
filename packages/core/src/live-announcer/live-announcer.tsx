@@ -6,7 +6,7 @@
  * https://github.com/adobe/react-spectrum/blob/15e101b74966bd5eb719c6529ce71ce57eaed430/packages/@react-aria/live-announcer/src/LiveAnnouncer.tsx
  */
 
-import { visuallyHiddenStyles } from "@kobalte/utils";
+import { visuallyHiddenStyles } from "@opencenter-cloud/kobalte-utils";
 
 type Assertiveness = "assertive" | "polite";
 

@@ -6,7 +6,7 @@
  * https://github.com/adobe/react-spectrum/blob/main/packages/%40react-aria/meter/src/useMeter.ts
  */
 
-import { clamp, createGenerateId, mergeDefaultProps } from "@kobalte/utils";
+import { clamp, createGenerateId, mergeDefaultProps } from "@opencenter-cloud/kobalte-utils";
 import type { ValidComponent } from "@solidjs/web";
 import {
 	type Accessor,

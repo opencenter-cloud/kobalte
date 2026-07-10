@@ -2,7 +2,7 @@ import {
 	callHandler,
 	mergeDefaultProps,
 	visuallyHiddenStyles,
-} from "@kobalte/utils";
+} from "@opencenter-cloud/kobalte-utils";
 import { combineStyle } from "@solid-primitives/props";
 import { COLOR_INTL_TRANSLATIONS } from "@solid-primitives/utils/colors";
 import type { ComponentProps, JSX } from "@solidjs/web";

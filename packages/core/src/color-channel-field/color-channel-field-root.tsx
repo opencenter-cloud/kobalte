@@ -1,4 +1,4 @@
-import { clamp, mergeDefaultProps } from "@kobalte/utils";
+import { clamp, mergeDefaultProps } from "@opencenter-cloud/kobalte-utils";
 import {
 	type Color,
 	type ColorChannel,

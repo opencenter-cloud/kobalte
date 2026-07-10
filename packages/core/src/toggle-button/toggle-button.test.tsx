@@ -1,4 +1,4 @@
-import { installPointerEvent } from "@kobalte/tests";
+import { installPointerEvent } from "@opencenter-cloud/kobalte-tests";
 import { fireEvent, render } from "@solidjs/testing-library";
 import { vi } from "vitest";
 

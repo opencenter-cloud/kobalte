@@ -6,7 +6,7 @@
  * https://github.com/adobe/react-spectrum/blob/810579b671791f1593108f62cdc1893de3a220e3/packages/@react-spectrum/switch/test/Switch.test.js
  */
 
-import { installPointerEvent } from "@kobalte/tests";
+import { installPointerEvent } from "@opencenter-cloud/kobalte-tests";
 import { fireEvent, render } from "@solidjs/testing-library";
 import { vi } from "vitest";
 

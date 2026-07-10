@@ -1,4 +1,4 @@
-import { composeEventHandlers, visuallyHiddenStyles } from "@kobalte/utils";
+import { composeEventHandlers, visuallyHiddenStyles } from "@opencenter-cloud/kobalte-utils";
 import { combineStyle } from "@solid-primitives/props";
 import type { ComponentProps, JSX } from "@solidjs/web";
 import { omit } from "solid-js";

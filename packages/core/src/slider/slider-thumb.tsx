@@ -17,7 +17,7 @@ import {
 	mergeDefaultProps,
 	mergeRefs,
 	type Orientation,
-} from "@kobalte/utils";
+} from "@opencenter-cloud/kobalte-utils";
 import { combineStyle } from "@solid-primitives/props";
 import type { JSX, ValidComponent } from "@solidjs/web";
 import {

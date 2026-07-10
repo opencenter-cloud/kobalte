@@ -17,7 +17,7 @@ import {
 	mergeDefaultProps,
 	mergeRefs,
 	scrollIntoViewport,
-} from "@kobalte/utils";
+} from "@opencenter-cloud/kobalte-utils";
 import type { ComponentProps, JSX, ValidComponent } from "@solidjs/web";
 import {
 	children,

@@ -12,7 +12,7 @@
  * https://github.com/chakra-ui/zag/blob/d1dbf9e240803c9e3ed81ebef363739be4273de0/packages/utilities/dismissable/src/layer-stack.ts
  */
 
-import { getDocument } from "@kobalte/utils";
+import { getDocument } from "@opencenter-cloud/kobalte-utils";
 
 export interface LayerModel {
 	node: HTMLElement;

@@ -1,24 +1,26 @@
 {
-	"name": "@kobalte/vanilla-extract",
-	"version": "0.5.0",
+	"name": "@opencenter-cloud/kobalte-vanilla-extract",
+	"version": "0.1.0",
 	"private": false,
-	"description": "Vanilla Extract utils to style Kobalte components easily",
+	"description": "Vanilla Extract utilities for styling Kobalte components. Solid 2 bridge fork of @kobalte/vanilla-extract, published by opencenter-cloud.",
 	"keywords": [
 		"solid",
 		"solidjs",
+		"solid-2",
 		"ui",
 		"library",
 		"design-system",
 		"components",
-		"vanilla-extract"
+		"vanilla-extract",
+		"kobalte-fork"
 	],
-	"homepage": "https://github.com/kobaltedev/kobalte/tree/main/packages/vanilla-extract#readme",
+	"homepage": "https://github.com/opencenter-cloud/kobalte/tree/feat/corvu-next-integration/packages/vanilla-extract#readme",
 	"bugs": {
-		"url": "https://github.com/kobaltedev/kobalte/issues"
+		"url": "https://github.com/opencenter-cloud/kobalte/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/kobaltedev/kobalte.git"
+		"url": "git+https://github.com/opencenter-cloud/kobalte.git"
 	},
 	"license": "MIT",
 	"author": "Fabien Marie-Louise <fabienml.dev@gmail.com>",

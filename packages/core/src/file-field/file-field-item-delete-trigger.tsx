@@ -1,4 +1,4 @@
-import { composeEventHandlers } from "@kobalte/utils";
+import { composeEventHandlers } from "@opencenter-cloud/kobalte-utils";
 import type { JSX, ValidComponent } from "@solidjs/web";
 import { type Component, omit } from "solid-js";
 import * as Button from "../button";

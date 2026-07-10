@@ -1,4 +1,4 @@
-import { mergeDefaultProps } from "@kobalte/utils";
+import { mergeDefaultProps } from "@opencenter-cloud/kobalte-utils";
 import { parseColor } from "@solid-primitives/utils/colors";
 import type { JSX, ValidComponent } from "@solidjs/web";
 import {

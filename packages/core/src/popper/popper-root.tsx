@@ -18,7 +18,7 @@ import {
 	shift,
 	size,
 } from "@floating-ui/dom";
-import { mergeDefaultProps } from "@kobalte/utils";
+import { mergeDefaultProps } from "@opencenter-cloud/kobalte-utils";
 import {
 	type Accessor,
 	createSignal,

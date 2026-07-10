@@ -25,9 +25,9 @@ export default defineConfig({
 	resolve: {
 		alias: {
 			"solid-js/web": "@solidjs/web",
-			// Use the workspace source of @kobalte/utils so tests run against the
-			// Solid 2.0-compatible version rather than the published npm dist.
-			"@kobalte/utils": path.resolve(__dirname, "../utils/src/index.ts"),
+			// Use the workspace source of @opencenter-cloud/kobalte-utils so tests run
+			// against the Solid 2.0-compatible version rather than the published npm dist.
+			"@opencenter-cloud/kobalte-utils": path.resolve(__dirname, "../utils/src/index.ts"),
 		},
 		conditions: ["development", "browser"],
 	},

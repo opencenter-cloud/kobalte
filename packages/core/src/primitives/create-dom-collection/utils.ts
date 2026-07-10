@@ -6,7 +6,7 @@
  * https://github.com/ariakit/ariakit/blob/da142672eddefa99365773ced72171facc06fdcb/packages/ariakit/src/collection/collection-state.ts
  */
 
-import { getDocument } from "@kobalte/utils";
+import { getDocument } from "@opencenter-cloud/kobalte-utils";
 import { type Accessor, createEffect } from "solid-js";
 
 import type { DomCollectionItem } from "./types";

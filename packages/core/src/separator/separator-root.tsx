@@ -6,7 +6,7 @@
  * https://github.com/adobe/react-spectrum/blob/6b51339cca0b8344507d3c8e81e7ad05d6e75f9b/packages/@react-aria/separator/src/useSeparator.ts
  */
 
-import { mergeDefaultProps, mergeRefs, type Orientation } from "@kobalte/utils";
+import { mergeDefaultProps, mergeRefs, type Orientation } from "@opencenter-cloud/kobalte-utils";
 import type { ValidComponent } from "@solidjs/web";
 import { createSignal, omit } from "solid-js";
 

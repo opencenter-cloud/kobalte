@@ -4,7 +4,7 @@ import {
 	mergeRefs,
 	type Orientation,
 	type ValidationState,
-} from "@kobalte/utils";
+} from "@opencenter-cloud/kobalte-utils";
 import { createFormResetListener } from "@solid-primitives/form";
 import type { ValidComponent } from "@solidjs/web";
 import { createSignal, createUniqueId, omit } from "solid-js";

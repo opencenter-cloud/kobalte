@@ -1,4 +1,4 @@
-import { type MaybeAccessor, mergeDefaultProps } from "@kobalte/utils";
+import { type MaybeAccessor, mergeDefaultProps } from "@opencenter-cloud/kobalte-utils";
 import { createEffect } from "solid-js";
 
 import { useDomCollectionContext } from "./dom-collection-context";

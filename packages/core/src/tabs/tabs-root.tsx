@@ -7,7 +7,7 @@
  * https://github.com/adobe/react-spectrum/blob/6b51339cca0b8344507d3c8e81e7ad05d6e75f9b/packages/@react-aria/tabs/src/useTabList.ts
  */
 
-import { mergeDefaultProps, type Orientation } from "@kobalte/utils";
+import { mergeDefaultProps, type Orientation } from "@opencenter-cloud/kobalte-utils";
 import type { ValidComponent } from "@solidjs/web";
 import { createEffect, createSignal, createUniqueId, omit } from "solid-js";
 

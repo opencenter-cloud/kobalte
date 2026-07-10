@@ -13,7 +13,7 @@ import {
 	mergeRefs,
 	type Orientation,
 	OverrideComponentProps,
-} from "@kobalte/utils";
+} from "@opencenter-cloud/kobalte-utils";
 import { interactOutside } from "@solid-primitives/interaction";
 import { isServer, type ValidComponent } from "@solidjs/web";
 import {

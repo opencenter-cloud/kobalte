@@ -1,11 +1,12 @@
 {
-	"name": "@kobalte/tests",
-	"version": "0.6.0",
+	"name": "@opencenter-cloud/kobalte-tests",
+	"version": "0.1.0",
 	"private": true,
-	"description": "Helper package that is used to contain commonly repeated tests logic.",
+	"description": "Internal test helpers for the @opencenter-cloud/kobalte-* fork. Not published.",
 	"keywords": [
 		"solid",
 		"solidjs",
+		"solid-2",
 		"ui",
 		"library",
 		"design-system",
@@ -14,13 +15,13 @@
 		"unstyled",
 		"aria"
 	],
-	"homepage": "https://github.com/kobaltedev/kobalte/tree/main/packages/tests#readme",
+	"homepage": "https://github.com/opencenter-cloud/kobalte/tree/feat/corvu-next-integration/packages/tests#readme",
 	"bugs": {
-		"url": "https://github.com/kobaltedev/kobalte/issues"
+		"url": "https://github.com/opencenter-cloud/kobalte/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/kobaltedev/kobalte.git"
+		"url": "git+https://github.com/opencenter-cloud/kobalte.git"
 	},
 	"license": "MIT",
 	"author": "Fabien Marie-Louise <fabienml.dev@gmail.com>",

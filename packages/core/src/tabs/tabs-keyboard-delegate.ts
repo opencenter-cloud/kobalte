@@ -6,7 +6,7 @@
  * https://github.com/adobe/react-spectrum/blob/6b51339cca0b8344507d3c8e81e7ad05d6e75f9b/packages/@react-aria/tabs/src/TabsKeyboardDelegate.ts
  */
 
-import type { Orientation } from "@kobalte/utils";
+import type { Orientation } from "@opencenter-cloud/kobalte-utils";
 import type { Accessor } from "solid-js";
 
 import type { Direction } from "../i18n";

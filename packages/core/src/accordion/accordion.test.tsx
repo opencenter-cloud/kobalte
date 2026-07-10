@@ -6,7 +6,7 @@
  * https://github.com/radix-ui/primitives/blob/21a7c97dc8efa79fecca36428eec49f187294085/packages/react/accordion/src/Accordion.test.tsx
  */
 
-import { installPointerEvent } from "@kobalte/tests";
+import { installPointerEvent } from "@opencenter-cloud/kobalte-tests";
 import { fireEvent, render, within } from "@solidjs/testing-library";
 import userEvent from "@testing-library/user-event";
 import { type ComponentProps, For } from "solid-js";

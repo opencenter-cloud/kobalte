@@ -1,4 +1,4 @@
-import { createPointerEvent, installPointerEvent } from "@kobalte/tests";
+import { createPointerEvent, installPointerEvent } from "@opencenter-cloud/kobalte-tests";
 import { cleanup, fireEvent, render, within } from "@solidjs/testing-library";
 import userEvent from "@testing-library/user-event";
 import { vi } from "vitest";

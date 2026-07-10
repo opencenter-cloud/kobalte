@@ -12,7 +12,7 @@ import {
 	getEventPoint,
 	isPointInPolygon,
 	mergeDefaultProps,
-} from "@kobalte/utils";
+} from "@opencenter-cloud/kobalte-utils";
 import { createPresence } from "@solid-primitives/presence";
 import { isServer } from "@solidjs/web";
 import {

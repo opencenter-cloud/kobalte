@@ -12,7 +12,7 @@ import {
 	startOfWeek,
 	today,
 } from "@internationalized/date";
-import { callHandler, mergeDefaultProps } from "@kobalte/utils";
+import { callHandler, mergeDefaultProps } from "@opencenter-cloud/kobalte-utils";
 import type { JSX, ValidComponent } from "@solidjs/web";
 import { createMemo, omit } from "solid-js";
 

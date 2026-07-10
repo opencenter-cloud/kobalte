@@ -1,4 +1,4 @@
-import { clamp, mergeDefaultProps, snapValueToStep } from "@kobalte/utils";
+import { clamp, mergeDefaultProps, snapValueToStep } from "@opencenter-cloud/kobalte-utils";
 import {
 	type Color,
 	type ColorChannel,

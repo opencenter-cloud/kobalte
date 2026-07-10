@@ -1,4 +1,4 @@
-import { mergeDefaultProps } from "@kobalte/utils";
+import { mergeDefaultProps } from "@opencenter-cloud/kobalte-utils";
 import { createUniqueId, omit, type ParentProps } from "solid-js";
 
 import { MenuRoot, type MenuRootOptions } from "../menu";

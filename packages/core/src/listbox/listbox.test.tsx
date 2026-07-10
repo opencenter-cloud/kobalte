@@ -6,7 +6,7 @@
  * https://github.com/adobe/react-spectrum/blob/22cb32d329e66c60f55d4fc4025d1d44bb015d71/packages/@react-spectrum/listbox/test/Listbox.test.js
  */
 
-import { createPointerEvent } from "@kobalte/tests";
+import { createPointerEvent } from "@opencenter-cloud/kobalte-tests";
 import { fireEvent, render } from "@solidjs/testing-library";
 import { vi } from "vitest";
 

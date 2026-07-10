@@ -17,7 +17,7 @@ import {
 	createGenerateId,
 	mergeDefaultProps,
 	mergeRefs,
-} from "@kobalte/utils";
+} from "@opencenter-cloud/kobalte-utils";
 import { createPresence } from "@solid-primitives/presence";
 import { combineStyle } from "@solid-primitives/props";
 import type { JSX, ValidComponent } from "@solidjs/web";

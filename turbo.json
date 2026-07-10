@@ -6,7 +6,7 @@
 			"outputs": ["dist/**"]
 		},
 		"test": {
-			"dependsOn": ["@kobalte/tests#build", "@kobalte/utils#build"]
+			"dependsOn": ["@opencenter-cloud/kobalte-tests#build", "@opencenter-cloud/kobalte-utils#build"]
 		},
 		"typecheck": {
 			"cache": false

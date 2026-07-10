@@ -10,7 +10,7 @@ import {
 	getFocusableTreeWalker,
 	mergeRefs,
 	type Orientation,
-} from "@kobalte/utils";
+} from "@opencenter-cloud/kobalte-utils";
 import { createPresence } from "@solid-primitives/presence";
 import type { ValidComponent } from "@solidjs/web";
 import { createEffect, createSignal, omit, Show } from "solid-js";

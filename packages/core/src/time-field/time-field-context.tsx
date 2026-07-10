@@ -1,4 +1,4 @@
-import type { FocusManager } from "@kobalte/utils";
+import type { FocusManager } from "@opencenter-cloud/kobalte-utils";
 import { type Accessor, createContext, useContext } from "solid-js";
 import type { TimeFieldIntlTranslations } from "./time-field.intl";
 import type { SegmentType, Time, TimeFieldHourCycle } from "./types";

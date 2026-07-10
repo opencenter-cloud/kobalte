@@ -35,7 +35,7 @@
 		"@docsearch/css": "4.6.3",
 		"@docsearch/js": "4.6.3",
 		"@internationalized/date": "3.12.2",
-		"@kobalte/core": "workspace:*",
+		"@opencenter-cloud/kobalte-core": "workspace:*",
 		"@solidjs/meta": "0.29.4",
 		"@solidjs/router": "0.16.1",
 		"@solidjs/start": "1.3.2",
@@ -47,7 +47,7 @@
 		"vinxi": "0.5.11"
 	},
 	"devDependencies": {
-		"@kobalte/tailwindcss": "0.9.0",
+		"@opencenter-cloud/kobalte-tailwindcss": "workspace:*",
 		"@mdx-js/mdx": "3.1.1",
 		"@mdx-js/rollup": "3.1.1",
 		"@tailwindcss/postcss": "^4.3.2",

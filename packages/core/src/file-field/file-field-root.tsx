@@ -1,4 +1,4 @@
-import { mergeDefaultProps, type ValidationState } from "@kobalte/utils";
+import { mergeDefaultProps, type ValidationState } from "@opencenter-cloud/kobalte-utils";
 import type { UploadFile } from "@solid-primitives/upload";
 import type { ValidComponent } from "@solidjs/web";
 import {

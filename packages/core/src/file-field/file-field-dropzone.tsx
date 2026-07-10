@@ -1,4 +1,4 @@
-import { composeEventHandlers, mergeRefs } from "@kobalte/utils";
+import { composeEventHandlers, mergeRefs } from "@opencenter-cloud/kobalte-utils";
 import type { JSX, ValidComponent } from "@solidjs/web";
 import { createSignal, omit } from "solid-js";
 import {

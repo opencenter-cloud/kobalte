@@ -16,7 +16,7 @@ import {
 	callHandler,
 	isFunction,
 	OverrideComponentProps,
-} from "@kobalte/utils";
+} from "@opencenter-cloud/kobalte-utils";
 import type { JSX, ValidComponent } from "@solidjs/web";
 import { type Accessor, type Component, children, omit } from "solid-js";
 

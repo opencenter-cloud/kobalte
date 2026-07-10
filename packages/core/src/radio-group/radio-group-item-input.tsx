@@ -11,7 +11,7 @@ import {
 	mergeDefaultProps,
 	mergeRefs,
 	visuallyHiddenStyles,
-} from "@kobalte/utils";
+} from "@opencenter-cloud/kobalte-utils";
 import { combineStyle } from "@solid-primitives/props";
 import type { JSX, ValidComponent } from "@solidjs/web";
 import { createEffect, createSignal, omit, onCleanup } from "solid-js";

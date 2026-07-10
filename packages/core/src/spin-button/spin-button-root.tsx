@@ -10,7 +10,7 @@ import {
 	callHandler,
 	mergeDefaultProps,
 	type ValidationState,
-} from "@kobalte/utils";
+} from "@opencenter-cloud/kobalte-utils";
 import { combineStyle } from "@solid-primitives/props";
 import type { JSX, ValidComponent } from "@solidjs/web";
 import { createEffect, createMemo, omit } from "solid-js";

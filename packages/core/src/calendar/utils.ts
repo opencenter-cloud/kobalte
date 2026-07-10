@@ -25,7 +25,7 @@ import {
 	startOfYear,
 	toCalendarDate,
 } from "@internationalized/date";
-import type { RangeValue } from "@kobalte/utils";
+import type { RangeValue } from "@opencenter-cloud/kobalte-utils";
 
 import { createDateFormatter } from "../i18n";
 import type { CalendarIntlTranslations } from "./calendar.intl";

@@ -6,7 +6,7 @@
  * https://github.com/adobe/react-spectrum/blob/1ddcde7b4fef9af7f08e11bb78d71fe60bbcc64b/packages/@react-stately/slider/src/useSliderState.ts
  */
 
-import { clamp, mergeDefaultProps, snapValueToStep } from "@kobalte/utils";
+import { clamp, mergeDefaultProps, snapValueToStep } from "@opencenter-cloud/kobalte-utils";
 import { type Accessor, createMemo, createSignal } from "solid-js";
 
 import { createControllableArraySignal } from "../primitives";

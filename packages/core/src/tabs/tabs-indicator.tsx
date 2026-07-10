@@ -6,7 +6,7 @@
  * https://github.com/adobe/react-spectrum/blob/703ab7b4559ecd4fc611e7f2c0e758867990fe01/packages/@react-spectrum/tabs/src/Tabs.tsx
  */
 
-import type { Orientation } from "@kobalte/utils";
+import type { Orientation } from "@opencenter-cloud/kobalte-utils";
 import { combineStyle } from "@solid-primitives/props";
 import { createResizeObserver } from "@solid-primitives/resize-observer";
 import type { JSX, ValidComponent } from "@solidjs/web";

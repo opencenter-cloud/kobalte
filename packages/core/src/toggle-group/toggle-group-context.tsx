@@ -1,4 +1,4 @@
-import type { Orientation } from "@kobalte/utils";
+import type { Orientation } from "@opencenter-cloud/kobalte-utils";
 import { type Accessor, createContext, useContext } from "solid-js";
 import type { ListState } from "../list";
 

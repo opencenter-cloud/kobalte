@@ -6,7 +6,7 @@
  * https://github.com/adobe/react-spectrum/blob/bfce84fee12a027d9cbc38b43e1747e3e4b4b169/packages/@react-stately/selection/src/useMultipleSelectionState.ts
  */
 
-import { access, type MaybeAccessor, mergeDefaultProps } from "@kobalte/utils";
+import { access, type MaybeAccessor, mergeDefaultProps } from "@opencenter-cloud/kobalte-utils";
 import { createEffect, createMemo, createSignal } from "solid-js";
 
 import { createControllableSelectionSignal } from "./create-controllable-selection-signal";

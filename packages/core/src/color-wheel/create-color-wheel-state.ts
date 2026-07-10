@@ -1,4 +1,4 @@
-import { mergeDefaultProps } from "@kobalte/utils";
+import { mergeDefaultProps } from "@opencenter-cloud/kobalte-utils";
 import { type Color, parseColor } from "@solid-primitives/utils/colors";
 import { type Accessor, createMemo, createSignal } from "solid-js";
 import { createControllableSignal } from "../primitives";
