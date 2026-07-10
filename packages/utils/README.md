@@ -1,21 +1,30 @@
-# @kobalte/utils
+# @opencenter-cloud/kobalte-utils
 
-Common utilities and types for Kobalte.
+Bridge fork of [`@kobalte/utils`](https://github.com/kobaltedev/kobalte/tree/solid2/packages/utils) for **Solid 2.0**.
+
+## Why this exists
+
+Upstream Kobalte's `solid2` branch is complete and tested but has no npm release yet. This package provides an installable Solid 2-compatible build so downstream projects (e.g., `@opencenter-cloud/kobalte-core`) can resolve their dependencies today.
 
 ## Installation
 
 ```bash
-npm install @kobalte/utils
-# or
-yarn add @kobalte/utils
-# or
-pnpm add @kobalte/utils
+pnpm add @opencenter-cloud/kobalte-utils
 ```
 
-## Documentation
+## Peer dependencies
 
-For full documentation, visit [kobalte.dev](https://kobalte.dev/).
+- `solid-js@^2.0.0-beta.14`
+- `@solidjs/web@^2.0.0-beta.14`
 
-## Changelog
+## Source
 
-All notable changes are described in the [CHANGELOG.md](./CHANGELOG.md) file.
+Tracks [`opencenter-cloud/kobalte`](https://github.com/opencenter-cloud/kobalte), branch `solid2-next`, which is based on upstream Kobalte's `solid2` branch plus [PR #680](https://github.com/kobaltedev/kobalte/pull/680) patches.
+
+## Deprecation
+
+This package will be deprecated when upstream Kobalte publishes an official Solid 2 release. At that point, switch back to `@kobalte/utils`.
+
+## License
+
+MIT — see [LICENSE.md](./LICENSE.md). Original authors: jer3m01, Fabien Marie-Louise.

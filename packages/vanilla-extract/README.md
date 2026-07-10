@@ -1,70 +1,44 @@
-# @kobalte/vanilla-extract
+# @opencenter-cloud/kobalte-vanilla-extract
 
-Vanilla Extract utils to style Kobalte components easily.
+Bridge fork of [`@kobalte/vanilla-extract`](https://github.com/kobaltedev/kobalte/tree/solid2/packages/vanilla-extract) for **Solid 2.0**.
+
+Vanilla Extract utilities for styling Kobalte components using `data-*` attribute selectors.
+
+## Why this exists
+
+Upstream Kobalte's `solid2` branch is complete and tested but has no npm release yet. This package provides an installable build so projects using `@opencenter-cloud/kobalte-core` with Vanilla Extract can style components today.
 
 ## Installation
 
 ```bash
-npm install -D @kobalte/vanilla-extract
-# or
-yarn add -D @kobalte/vanilla-extract
-# or
-pnpm add -D @kobalte/vanilla-extract
+pnpm add -D @opencenter-cloud/kobalte-vanilla-extract
 ```
-
-> **Note** In order to use these utils you need to configure Vanilla Extract in your project. https://vanilla-extract.style
 
 ## Usage
 
-### componentStateStyles
-
-Create vanilla-extract complaint styles for styling data-\* attributes of Kobalte components.
-
 ```ts
-// styles.css
-import { style } from "@vanilla-extract/css";
-import { componentStateStyles } from "@kobalte/vanilla-extract";
+import { componentStateStyles } from "@opencenter-cloud/kobalte-vanilla-extract";
 
-const button = style([
-	{
-		background: "blue",
-		padding: "2px 6px",
-	},
-	componentStateStyles({
-		disabled: {
-			opacity: 0.4,
-		},
-		invalid: {
-			backgroundColor: "red",
-			not: {
-				backgroundColor: "yellow",
-			},
-		},
-	}),
-	componentStateStyles(
-		{
-			invalid: {
-				backgroundColor: "red",
-			},
-		},
-		{ parentSelector: "[data-theme=dark]" },
-	),
+export const trigger = style([
+  componentStateStyles({
+    expanded: { backgroundColor: "blue" },
+    closed: { opacity: 0.5 },
+  }),
 ]);
 ```
 
-Then apply your styles to the component:
+## Peer dependencies
 
-```tsx
-import { Button } from "@kobalte/core";
-import { button } from "./styles.css";
+- `@vanilla-extract/css@^1.13.0`
 
-export const MyButton = () => <Button.Root class={button}>...</Button.Root>;
-```
+## Source
 
-## Documentation
+Tracks [`opencenter-cloud/kobalte`](https://github.com/opencenter-cloud/kobalte), branch `solid2-next`.
 
-For full documentation, visit [kobalte.dev](https://kobalte.dev/docs/core/overview/styling#using-the-vanilla-extract-plugin).
+## Deprecation
 
-## Changelog
+This package will be deprecated when upstream Kobalte publishes an official Solid 2 release. Switch back to `@kobalte/vanilla-extract`.
 
-All notable changes are described in the [CHANGELOG.md](./CHANGELOG.md) file.
+## License
+
+MIT — see [LICENSE.md](../../LICENSE.md). Original author: Fabien Marie-Louise.

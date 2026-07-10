@@ -1,79 +1,48 @@
-# @kobalte/tailwindcss
+# @opencenter-cloud/kobalte-tailwindcss
 
-A TailwindCSS plugin for styling Kobalte components with `data-*` attributes by using modifiers like `ui-expanded:*`.
+Bridge fork of [`@kobalte/tailwindcss`](https://github.com/kobaltedev/kobalte/tree/solid2/packages/tailwindcss) for **Solid 2.0**.
+
+A TailwindCSS plugin for styling Kobalte components using `data-*` attribute modifiers like `ui-expanded:*`.
+
+## Why this exists
+
+Upstream Kobalte's `solid2` branch is complete and tested but has no npm release yet. This package provides an installable build so projects using `@opencenter-cloud/kobalte-core` can style components with Tailwind today.
 
 ## Installation
 
 ```bash
-npm install -D @kobalte/tailwindcss
-# or
-yarn add -D @kobalte/tailwindcss
-# or
-pnpm add -D @kobalte/tailwindcss
+pnpm add -D @opencenter-cloud/kobalte-tailwindcss
 ```
 
 ## Usage
 
-Add the plugin to your `tailwind.config.js`:
-
 ```js
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-	content: [],
-	theme: {
-		extend: {},
-	},
-	plugins: [
-		// default prefix is "ui"
-		require("@kobalte/tailwindcss"),
+// tailwind.config.js
+import kobalte from "@opencenter-cloud/kobalte-tailwindcss";
 
-		// or with a custom prefix:
-		require("@kobalte/tailwindcss")({ prefix: "kb" }),
-	],
+export default {
+  plugins: [kobalte],
 };
 ```
 
-Style your component:
+Then use modifiers in your markup:
 
-```tsx
-import { Popover } from "@kobalte/core";
-
-export const MyPopover = () => (
-	<Popover>
-		<Popover.Trigger class="ui-disabled:bg-slate-100">Open</Popover.Trigger>
-		<Popover.Content class="ui-expanded:shadow-md">...</Popover.Content>
-	</Popover>
-);
+```html
+<div class="ui-expanded:bg-blue-100 ui-closed:opacity-50">...</div>
 ```
 
-You can use the following modifiers:
+## Peer dependencies
 
-| Modifier               | Inverse modifier           |
-| :--------------------- | :------------------------- |
-| `ui-valid`             | `ui-not-valid`             |
-| `ui-invalid`           | `ui-not-invalid`           |
-| `ui-required`          | `ui-not-required`          |
-| `ui-disabled`          | `ui-not-disabled`          |
-| `ui-readonly`          | `ui-not-readonly`          |
-| `ui-checked`           | `ui-not-checked`           |
-| `ui-indeterminate`     | `ui-not-indeterminate`     |
-| `ui-selected`          | `ui-not-selected`          |
-| `ui-pressed`           | `ui-not-pressed`           |
-| `ui-expanded`          | `ui-not-expanded`          |
-| `ui-highlighted`       | `ui-not-highlighted`       |
-| `ui-current`           | `ui-not-current`           |
-| `ui-placeholder-shown` | `ui-not-placeholder-shown` |
+- `tailwindcss@>=3`
 
-It's also possible to use _inverse modifiers_ in the form of `ui-not-*`, _group and peer modifiers_ in the form of `ui-group-*` and `ui-peer-*`.
+## Source
 
-## Documentation
+Tracks [`opencenter-cloud/kobalte`](https://github.com/opencenter-cloud/kobalte), branch `solid2-next`.
 
-For full documentation, visit [kobalte.dev](https://kobalte.dev/docs/core/overview/styling#using-the-tailwindcss-plugin).
+## Deprecation
 
-## Acknowledgment
+This package will be deprecated when upstream Kobalte publishes an official Solid 2 release. Switch back to `@kobalte/tailwindcss`.
 
-This plugin is an adaptation of [@headlessui/tailwindcss](https://github.com/tailwindlabs/headlessui), MIT Licensed, Copyright (c) 2020 Tailwind Labs.
+## License
 
-## Changelog
-
-All notable changes are described in the [CHANGELOG.md](./CHANGELOG.md) file.
+MIT — see [LICENSE.md](../../LICENSE.md). Original author: Fabien Marie-Louise.
