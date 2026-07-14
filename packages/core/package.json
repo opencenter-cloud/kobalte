@@ -1,106 +1,105 @@
 {
-	"name": "@opencenter-cloud/kobalte-core",
-	"version": "0.1.0",
-	"private": false,
-	"description": "Unstyled components and primitives for building accessible web apps and design systems with SolidJS. Solid 2 bridge fork of @kobalte/core, published by opencenter-cloud.",
-	"keywords": [
-		"solid",
-		"solidjs",
-		"solid-2",
-		"ui",
-		"library",
-		"design-system",
-		"components",
-		"headless",
-		"unstyled",
-		"aria",
-		"kobalte-fork"
-	],
-	"homepage": "https://github.com/opencenter-cloud/kobalte/tree/feat/corvu-next-integration/packages/core#readme",
-	"bugs": {
-		"url": "https://github.com/opencenter-cloud/kobalte/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/opencenter-cloud/kobalte.git"
-	},
-	"license": "MIT",
-	"author": "jer3m01 <jer3m01@jer3m01.com>",
-	"contributors": [
-		"Fabien Marie-Louise <fabienml.dev@gmail.com>"
-	],
-	"sideEffects": false,
-	"type": "module",
-	"exports": {
-		".": {
-			"types": "./dist/index.d.ts",
-			"solid": "./dist/index.jsx",
-			"default": "./dist/index.js"
-		},
-		"./*": {
-			"types": "./dist/*/index.d.ts",
-			"solid": "./dist/*/index.jsx",
-			"default": "./dist/*/index.js"
-		},
-		"./src/*": "./src/*"
-	},
-	"main": "dist/index.js",
-	"module": "dist/index.js",
-	"types": "dist/index.d.ts",
-	"typesVersions": {
-		"*": {
-			"*": [
-				"./dist/*/index.d.ts",
-				"./dist/index.d.ts"
-			]
-		}
-	},
-	"source": "src/index.tsx",
-	"files": [
-		"dist",
-		"src",
-		"NOTICE.txt"
-	],
-	"scripts": {
-		"build": "pnpm build:cp && pnpm build:tsup",
-		"build:cp": "cp ../../NOTICE.txt .",
-		"build:tsup": "NODE_OPTIONS=\"--max-old-space-size=8192\" tsup",
-		"clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist && rm NOTICE.txt",
-		"dev": "vite serve dev --host",
-		"test-old": "jest --passWithNoTests",
-		"test": "vitest run",
-		"typecheck": "tsc --noEmit"
-	},
-	"dependencies": {
-		"@floating-ui/dom": "^1.7.6",
-		"@internationalized/date": "^3.4.0",
-		"@internationalized/number": "^3.2.1",
-		"@opencenter-cloud/kobalte-utils": "workspace:*",
-		"@solid-primitives/a11y": "next",
-		"@solid-primitives/controlled-signal": "1.0.0-next.1",
-		"@solid-primitives/i18n": "next",
-		"@solid-primitives/focus": "next",
-		"@solid-primitives/form": "next",
-		"@solid-primitives/i18n": "next",
-		"@solid-primitives/interaction": "next",
-		"@solid-primitives/keyboard": "next",
-		"@solid-primitives/presence": "next",
-		"@solid-primitives/props": "next",
-		"@solid-primitives/resize-observer": "next",
-		"@solid-primitives/scroll": "next",
-		"@solid-primitives/upload": "next",
-		"@solid-primitives/utils": "next"
-	},
-	"devDependencies": {
-		"@opencenter-cloud/kobalte-tests": "workspace:*",
-		"esbuild-plugin-solid": "^0.6.0",
-		"tsup": "8.5.1"
-	},
-	"peerDependencies": {
-		"@solidjs/web": "^2.0.0-beta.14",
-		"solid-js": "^2.0.0-beta.14"
-	},
-	"publishConfig": {
-		"access": "public"
-	}
+  "name": "@opencenter-cloud/kobalte-core",
+  "version": "0.1.1",
+  "private": false,
+  "description": "Unstyled components and primitives for building accessible web apps and design systems with SolidJS. Solid 2 bridge fork of @kobalte/core, published by opencenter-cloud.",
+  "keywords": [
+    "solid",
+    "solidjs",
+    "solid-2",
+    "ui",
+    "library",
+    "design-system",
+    "components",
+    "headless",
+    "unstyled",
+    "aria",
+    "kobalte-fork"
+  ],
+  "homepage": "https://github.com/opencenter-cloud/kobalte/tree/feat/corvu-next-integration/packages/core#readme",
+  "bugs": {
+    "url": "https://github.com/opencenter-cloud/kobalte/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opencenter-cloud/kobalte.git"
+  },
+  "license": "MIT",
+  "author": "jer3m01 <jer3m01@jer3m01.com>",
+  "contributors": [
+    "Fabien Marie-Louise <fabienml.dev@gmail.com>"
+  ],
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "solid": "./dist/index.jsx",
+      "default": "./dist/index.js"
+    },
+    "./*": {
+      "types": "./dist/*/index.d.ts",
+      "solid": "./dist/*/index.jsx",
+      "default": "./dist/*/index.js"
+    },
+    "./src/*": "./src/*"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*/index.d.ts",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "source": "src/index.tsx",
+  "files": [
+    "dist",
+    "src",
+    "NOTICE.txt"
+  ],
+  "scripts": {
+    "build": "pnpm build:cp && pnpm build:tsup",
+    "build:cp": "cp ../../NOTICE.txt .",
+    "build:tsup": "NODE_OPTIONS=\"--max-old-space-size=8192\" tsup",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist && rm NOTICE.txt",
+    "dev": "vite serve dev --host",
+    "test-old": "jest --passWithNoTests",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@floating-ui/dom": "^1.7.6",
+    "@internationalized/date": "^3.4.0",
+    "@internationalized/number": "^3.2.1",
+    "@opencenter-cloud/kobalte-utils": "workspace:*",
+    "@solid-primitives/a11y": "next",
+    "@solid-primitives/controlled-signal": "1.0.0-next.1",
+    "@solid-primitives/i18n": "next",
+    "@solid-primitives/focus": "next",
+    "@solid-primitives/form": "next",
+    "@solid-primitives/interaction": "next",
+    "@solid-primitives/keyboard": "next",
+    "@solid-primitives/presence": "next",
+    "@solid-primitives/props": "next",
+    "@solid-primitives/resize-observer": "next",
+    "@solid-primitives/scroll": "next",
+    "@solid-primitives/upload": "next",
+    "@solid-primitives/utils": "next"
+  },
+  "devDependencies": {
+    "@opencenter-cloud/kobalte-tests": "workspace:*",
+    "esbuild-plugin-solid": "^0.6.0",
+    "tsup": "8.5.1"
+  },
+  "peerDependencies": {
+    "@solidjs/web": "^2.0.0-beta.17",
+    "solid-js": "^2.0.0-beta.17"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }

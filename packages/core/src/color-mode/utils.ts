@@ -17,10 +17,12 @@ import type {
 export const FALLBACK_COLOR_MODE_VALUE: ConfigColorMode = "system";
 
 function query() {
+	if (isServer) return { matches: false, addEventListener: () => {}, removeEventListener: () => {} } as unknown as MediaQueryList;
 	return window.matchMedia("(prefers-color-scheme: dark)");
 }
 
 function preventTransition() {
+	if (isServer) return () => {};
 	const css = document.createElement("style");
 	css.appendChild(
 		document.createTextNode(
@@ -46,6 +48,7 @@ export function setColorModeDataset(
 	value: ColorMode,
 	shouldPreventTransition = true,
 ) {
+	if (isServer) return;
 	const cleanup = shouldPreventTransition ? preventTransition() : undefined;
 	document.documentElement.dataset.kbTheme = value;
 	document.documentElement.style.colorScheme = value;

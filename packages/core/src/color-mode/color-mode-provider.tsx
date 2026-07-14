@@ -7,6 +7,7 @@
  */
 
 import { createEffect, createSignal, onCleanup } from "solid-js";
+import { isServer } from "@solidjs/web";
 
 import { ColorModeContext } from "./color-mode-context";
 import { localStorageManager } from "./storage-manager";
@@ -65,6 +66,7 @@ export function ColorModeProvider(props: ColorModeProviderProps) {
 	};
 
 	createEffect(() => {
+		if (isServer) return;
 		setColorMode(colorModeManager().get() ?? fallbackColorMode());
 	});
 
