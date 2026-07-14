@@ -1,6 +1,6 @@
 {
 	"name": "@opencenter-cloud/kobalte-vanilla-extract",
-	"version": "0.1.0",
+	"version": "0.1.2",
 	"private": false,
 	"description": "Vanilla Extract utilities for styling Kobalte components. Solid 2 bridge fork of @kobalte/vanilla-extract, published by opencenter-cloud.",
 	"keywords": [

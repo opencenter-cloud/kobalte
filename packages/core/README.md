@@ -16,8 +16,8 @@ pnpm add @opencenter-cloud/kobalte-core
 
 ## Peer dependencies
 
-- `solid-js@^2.0.0-beta.14`
-- `@solidjs/web@^2.0.0-beta.14`
+- `solid-js@^2.0.0-beta.17`
+- `@solidjs/web@^2.0.0-beta.17`
 
 ## Usage
 

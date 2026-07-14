@@ -1,6 +1,6 @@
 {
 	"name": "@opencenter-cloud/kobalte-tailwindcss",
-	"version": "0.1.0",
+	"version": "0.1.2",
 	"private": false,
 	"description": "TailwindCSS plugin for styling Kobalte components with data-* attributes (ui-expanded:*, etc.). Solid 2 bridge fork of @kobalte/tailwindcss, published by opencenter-cloud.",
 	"keywords": [

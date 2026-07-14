@@ -1,6 +1,6 @@
 {
 	"name": "@opencenter-cloud/kobalte-utils",
-	"version": "0.1.0",
+	"version": "0.1.2",
 	"private": false,
 	"description": "Common utilities and types for Kobalte. Solid 2 bridge fork of @kobalte/utils, published by opencenter-cloud.",
 	"keywords": [
