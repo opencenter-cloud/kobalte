@@ -6,7 +6,7 @@
  * https://github.com/chakra-ui/chakra-ui/blob/main/packages/color-mode/src/color-mode-provider.tsx
  */
 
-import { createEffect, createSignal, onCleanup } from "solid-js";
+import { createSignal, onCleanup, onSettled } from "solid-js";
 import { isServer } from "@solidjs/web";
 
 import { ColorModeContext } from "./color-mode-context";
@@ -65,7 +65,7 @@ export function ColorModeProvider(props: ColorModeProviderProps) {
 		setColorMode(colorMode() === "dark" ? "light" : "dark");
 	};
 
-	createEffect(() => {
+	onSettled(() => {
 		if (isServer) return;
 		setColorMode(colorModeManager().get() ?? fallbackColorMode());
 	});

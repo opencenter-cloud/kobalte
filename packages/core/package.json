@@ -1,6 +1,6 @@
 {
   "name": "@opencenter-cloud/kobalte-core",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "private": false,
   "description": "Unstyled components and primitives for building accessible web apps and design systems with SolidJS. Solid 2 bridge fork of @kobalte/core, published by opencenter-cloud.",
   "keywords": [
@@ -75,7 +75,7 @@
     "@floating-ui/dom": "^1.7.6",
     "@internationalized/date": "^3.4.0",
     "@internationalized/number": "^3.2.1",
-    "@opencenter-cloud/kobalte-utils": "workspace:*",
+    "@opencenter-cloud/kobalte-utils": "^0.1.2",
     "@solid-primitives/a11y": "next",
     "@solid-primitives/controlled-signal": "1.0.0-next.1",
     "@solid-primitives/i18n": "next",
@@ -91,7 +91,6 @@
     "@solid-primitives/utils": "next"
   },
   "devDependencies": {
-    "@opencenter-cloud/kobalte-tests": "workspace:*",
     "esbuild-plugin-solid": "^0.6.0",
     "tsup": "8.5.1"
   },
