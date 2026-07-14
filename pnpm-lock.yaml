@@ -267,8 +267,8 @@ importers:
         specifier: ^3.2.1
         version: 3.6.7
       '@opencenter-cloud/kobalte-utils':
-        specifier: workspace:*
-        version: link:../utils
+        specifier: ^0.1.2
+        version: 0.1.2(@solidjs/web@2.0.0-beta.17(solid-js@2.0.0-beta.17))(solid-js@2.0.0-beta.17)
       '@solid-primitives/a11y':
         specifier: next
         version: 1.0.0-next.0(@solidjs/web@2.0.0-beta.17(solid-js@2.0.0-beta.17))(solid-js@2.0.0-beta.17)
@@ -315,9 +315,6 @@ importers:
         specifier: 2.0.0-beta.17
         version: 2.0.0-beta.17
     devDependencies:
-      '@opencenter-cloud/kobalte-tests':
-        specifier: workspace:*
-        version: link:../tests
       esbuild-plugin-solid:
         specifier: ^0.6.0
         version: 0.6.0(esbuild@0.28.1)(solid-js@2.0.0-beta.17)
@@ -1620,6 +1617,12 @@ packages:
   '@nodelib/fs.walk@1.2.8':
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
+
+  '@opencenter-cloud/kobalte-utils@0.1.2':
+    resolution: {integrity: sha512-q4+xvTrEMJj+qoZN7rEBms3HqttJNkn1Ke+kl7jrOdb3LcH28pEZ1wnooi3KI7p1k9I0NQ/HGXjpjTkCd5t7Pg==}
+    peerDependencies:
+      '@solidjs/web': 2.0.0-beta.17
+      solid-js: 2.0.0-beta.17
 
   '@oxc-parser/binding-android-arm-eabi@0.127.0':
     resolution: {integrity: sha512-0LC7ye4hvqbIKxAzThzvswgHLFu2AURKzYLeSVvLdu2TBOYWQDmHnTqPLeA597BcUCxiLqLsS4CJ5uoI5WYWCQ==}
@@ -8195,6 +8198,18 @@ snapshots:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.20.1
+
+  '@opencenter-cloud/kobalte-utils@0.1.2(@solidjs/web@2.0.0-beta.17(solid-js@2.0.0-beta.17))(solid-js@2.0.0-beta.17)':
+    dependencies:
+      '@solid-primitives/event-listener': 3.0.0-next.1(@solidjs/web@2.0.0-beta.17(solid-js@2.0.0-beta.17))(solid-js@2.0.0-beta.17)
+      '@solid-primitives/keyed': 3.0.0-next.0(@solidjs/web@2.0.0-beta.17(solid-js@2.0.0-beta.17))(solid-js@2.0.0-beta.17)
+      '@solid-primitives/map': 1.0.0-next.0(@solidjs/web@2.0.0-beta.17(solid-js@2.0.0-beta.17))(solid-js@2.0.0-beta.17)
+      '@solid-primitives/media': 4.0.0-next.0(@solidjs/web@2.0.0-beta.17(solid-js@2.0.0-beta.17))(solid-js@2.0.0-beta.17)
+      '@solid-primitives/props': 4.0.0-next.1(@solidjs/web@2.0.0-beta.17(solid-js@2.0.0-beta.17))(solid-js@2.0.0-beta.17)
+      '@solid-primitives/refs': 3.0.0-next.0(@solidjs/web@2.0.0-beta.17(solid-js@2.0.0-beta.17))(solid-js@2.0.0-beta.17)
+      '@solid-primitives/utils': 7.0.0-next.1(@solidjs/web@2.0.0-beta.17(solid-js@2.0.0-beta.17))(solid-js@2.0.0-beta.17)
+      '@solidjs/web': 2.0.0-beta.17(solid-js@2.0.0-beta.17)
+      solid-js: 2.0.0-beta.17
 
   '@oxc-parser/binding-android-arm-eabi@0.127.0':
     optional: true

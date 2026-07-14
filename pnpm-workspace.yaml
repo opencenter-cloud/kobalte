@@ -57,3 +57,4 @@ minimumReleaseAgeExclude:
   - '@solid-primitives/trigger@3.0.0-next.0'
   - '@solid-primitives/upload@1.0.0-next.0'
   - '@solid-primitives/utils@7.0.0-next.0'
+  - '@opencenter-cloud/kobalte-utils@0.1.3'
