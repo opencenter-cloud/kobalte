@@ -1,75 +1,81 @@
-//// tsup.config.ts
-//import { defineConfig } from 'tsup'
-//import * as preset from 'tsup-preset-solid'
-//import { globSync } from "glob";
-//
-//const preset_options: preset.PresetOptions = {
-//	// array or single object
-//	entries: [
-//		// default entry (index)
-//		{
-//			// entries with '.tsx' extension will have `solid` export condition generated
-//			entry: "src/index.tsx",
-//		}
-//	],
-//	drop_console: true,
-//}
-//
-//export default defineConfig(config => {
-//	const watching = !!config.watch;
-//
-//	const componentIndexes = globSync('src/*/index.tsx');
-//
-//	(preset_options.entries as preset.EntryOptions[]).push(...componentIndexes.map(s => ({
-//		entry: s,
-//	})));
-//
-//	const parsed_data = preset.parsePresetOptions(preset_options, watching);
-//
-//	if (!watching) {
-//		const package_fields = preset.generatePackageExports(parsed_data);
-//
-//		console.log(`\npackage.json: \n${JSON.stringify(package_fields, null, 2)}\n\n`);
-//
-//		/*
-//			will update ./package.json with the correct export fields
-//		*/
-//		preset.writePackageJson(package_fields);
-//	}
-//
-//	return preset.generateTsupOptions(parsed_data);
-//})
-
 import { solidPlugin } from "esbuild-plugin-solid";
 /**
  * Adapted from https://github.com/corvudev/corvu/blob/b1f36db096867a88ef5b62bec1e46cc0c8e09089/packages/corvu/tsup.config.ts
+ *
+ * Three build configs:
+ * 1. Client (generate: "dom") → dist/*.js — pre-compiled client code
+ * 2. SSR (generate: "ssr") → dist/server/*.js — pre-compiled server code
+ * 3. JSX (preserved) → dist/*.jsx — for bundlers with "solid" condition (re-compiled by consumer's vite-plugin-solid)
  */
 import { defineConfig, type Options } from "tsup";
 
-function generateConfig(jsx: boolean): Options {
+const ENTRY = ["src/index.tsx", "src/*/index.tsx", "src/primitives/*/index.ts"];
+
+function generateClientConfig(): Options {
 	return {
 		target: "esnext",
 		platform: "browser",
 		format: "esm",
 		clean: true,
-		dts: !jsx,
-		entry: ["src/index.tsx", "src/*/index.tsx", "src/primitives/*/index.ts"],
+		dts: true,
+		entry: ENTRY,
 		outDir: "dist/",
 		treeshake: { preset: "smallest" },
 		replaceNodeEnv: true,
 		esbuildOptions(options) {
-			if (jsx) {
-				options.jsx = "preserve";
-			}
+			options.chunkNames = "[name]/[hash]";
+			options.drop = ["console", "debugger"];
+		},
+		// @ts-expect-error esbuildPlugins type mismatch
+		esbuildPlugins: [solidPlugin({ solid: { generate: "dom" } })],
+	};
+}
+
+function generateServerConfig(): Options {
+	return {
+		target: "esnext",
+		platform: "node",
+		format: "esm",
+		clean: false, // Don't clean — client build already ran
+		dts: false, // Types are shared from client build
+		entry: ENTRY,
+		outDir: "dist/server/",
+		treeshake: { preset: "smallest" },
+		replaceNodeEnv: true,
+		esbuildOptions(options) {
+			options.chunkNames = "[name]/[hash]";
+			options.drop = ["console", "debugger"];
+		},
+		// @ts-expect-error esbuildPlugins type mismatch
+		esbuildPlugins: [solidPlugin({ solid: { generate: "ssr" } })],
+	};
+}
+
+function generateJsxConfig(): Options {
+	return {
+		target: "esnext",
+		platform: "browser",
+		format: "esm",
+		clean: false, // Don't clean — previous builds already ran
+		dts: false, // Types are shared from client build
+		entry: ENTRY,
+		outDir: "dist/",
+		treeshake: { preset: "smallest" },
+		replaceNodeEnv: true,
+		esbuildOptions(options) {
+			options.jsx = "preserve";
 			options.chunkNames = "[name]/[hash]";
 			options.drop = ["console", "debugger"];
 		},
 		outExtension() {
-			return jsx ? { js: ".jsx" } : {};
+			return { js: ".jsx" };
 		},
-		// @ts-expect-error
-		esbuildPlugins: !jsx ? [solidPlugin({ solid: { generate: "dom" } })] : [],
+		esbuildPlugins: [],
 	};
 }
 
-export default defineConfig([generateConfig(false), generateConfig(true)]);
+export default defineConfig([
+	generateClientConfig(),
+	generateServerConfig(),
+	generateJsxConfig(),
+]);
